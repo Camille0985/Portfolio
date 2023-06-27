@@ -1,0 +1,13 @@
+@import './settings.scss';
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+$textColor: pink;
+
+li {
+    color: $textColor;
+}
