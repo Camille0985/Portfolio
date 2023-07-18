@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 209px;
+    color: white;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+
+    img{
+        width: 122px;
+        height: 39px;
+    }
+}
