@@ -9,7 +9,7 @@ function Banner({ page }) {
     const title = page === 'home' ? 'Chez vous, partout ailleurs' : '';
   
     return (
-      <div className="container">
+      <div className="banner-container">
       <div className="banner">
         <div className="imageContainer">
           <img src={bannerImage} alt={altText} className="bannerImg" />

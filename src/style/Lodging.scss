@@ -1,47 +1,8 @@
 .lodging {
     font-family: 'Montserrat', sans-serif;
-}
-
-.lodging-name{
-    font-size: 36px;
     color: #FF6060;
-}
 
-.lodging-location {
-    font-size: 18px;
-    color: #FF6060;
-}
-.li-lodging {
-    padding: 0;
-
-    li{
-        display: inline-block;
-        list-style: none;
-        margin: 0 10px 0 0;
-        padding: 5px;
-        width: 150px;
-        text-align: center;
-        color: white;
-        background-color: #FF6060;
-        border: solid 1px #FF6060;
-        border-radius: 50px;
-    }
-    
-}
-
-.lodging-container {
     display: flex;
-    justify-content: space-between;
-}
-
-.infos-host {
-    justify-content: right;
-}
-
-.host{
-    display: flex;
-    
-    img{
-        border-radius: 150px;
-    }
+    flex-direction: column;
+    align-items: center;
 }

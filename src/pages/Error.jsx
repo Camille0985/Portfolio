@@ -14,7 +14,6 @@ function Error() {
         <p>Oups! La page que vous demandez n'existe pas.</p>
         <Link to={'/'} className='redirect'>Retourner sur la page d'accueil</Link>
       </div>
-      <Footer />
     </div>
       
   );

@@ -1,30 +1,22 @@
-import React from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import logo from '../assets/LOGO.png';
 import logoMobile from '../assets/LOGO-mobile.png';
-import { useState, useEffect } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../style/Header.scss';
 
 function Header() {
-    const [isMobile, setIsMobile] = useState(false);
     const [currentPath, setCurrentPath] = useState('/');
     const location = useLocation();
-      
+
     useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };      
-        handleResize();      
-        window.addEventListener('resize', handleResize);      
-        return () => {
-            window.removeEventListener('resize', handleResize);
-            setCurrentPath(location.pathname);
-        }
-    }, [location]);
+        setCurrentPath(location.pathname);
+      }, [location]);
     
     return(
         <header>
-            <img src={isMobile ? logoMobile : logo} alt="Logo" className="logo"/>
+            <img src={logo} alt="Logo" className="logo"/>
+            <img src={logoMobile} alt="Logo" className="logoMobile"/>
             <nav>
                 <ul>
                     <li><Link to='/' className={currentPath === '/' ? 'active' : ''}>Accueil</Link></li>
