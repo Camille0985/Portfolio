@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import data from '../data.json';
 import Carousel from '../components/Carousel';
 import Card from '../components/Card';
-import Footer from '../components/Footer';
 import '../style/Lodging.scss';
 
 function checkValidity(id) {

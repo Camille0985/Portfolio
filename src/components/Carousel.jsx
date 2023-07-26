@@ -3,6 +3,7 @@ import arrowLeft from '../assets/arrow-left.png';
 import arrowRight from '../assets/arrow-right.png';
 import '../style/Carousel.scss'
 
+
 const Carousel = ({ img }) => {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
@@ -14,15 +15,20 @@ const Carousel = ({ img }) => {
     setCurrentImgIndex((prevIndex) => (prevIndex === img.length - 1 ? 0 : prevIndex + 1));
   };
 
+  const currentImageIndex = currentImgIndex + 1;
+
   return (
     <div className='carousel-container'>
-    <div className='carousel'>
-      <img src={img[currentImgIndex]} alt={`Img ${currentImgIndex + 1}`} className='img-carousel'/>
-      <div className='btn-carousel-container'>
-        <button onClick={previousImage} className='btn-carousel-left'><img src={arrowLeft} alt='Back' className='img-btn-carousel'/></button>
-        <button onClick={nextImage} className='btn-carousel-right'><img src={arrowRight} alt='Forward' className='img-btn-carousel'/></button>
+      <div className='carousel'>
+        <img src={img[currentImgIndex]} alt={`Img ${currentImageIndex}/${img.length}`} className='img-carousel' />
+        <div className='btn-carousel-container'>
+          <button onClick={previousImage} className='btn-carousel-left'><img src={arrowLeft} alt='Back' className='img-btn-carousel' /></button>
+          <button onClick={nextImage} className='btn-carousel-right'><img src={arrowRight} alt='Forward' className='img-btn-carousel' /></button>
+        </div>
+        <div className='carousel-counter'>
+          <span>{currentImageIndex}/{img.length}</span>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
