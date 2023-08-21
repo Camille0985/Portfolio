@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: white;
+
+    .logo-git{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo-git{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .logo-git {
+        display: none;
+    }
+
+    .contact {
+        font-size: 12px;
+    }
+}

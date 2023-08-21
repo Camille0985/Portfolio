@@ -1,12 +1,18 @@
 import React from 'react';
-import logoFooter from '../assets/LOGO-Footer.png';
-import '../style/Footer.scss';
+import "../styles/Footer.scss"
 
 const Footer = () => {
+
+    const handleClick = () => {
+        window.open("https://github.com/Camille0985", "_blank");
+    };
+
     return (
         <div className='footer'>
-            <img src={logoFooter} alt="Logo" className="logo"/>
-            <span>© 2020 Kasa. All rights reserved</span>
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo" onClick={handleClick} className="logo-git"/>
+            <p className='contact' id='Contact'>
+                Duprez_camille@yahoo.com
+            </p>
         </div>
     )
 }

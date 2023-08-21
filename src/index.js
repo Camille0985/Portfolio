@@ -7,25 +7,13 @@ import {
   Link,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Lodging from "./pages/Lodging";
-import Error from "./pages/Error";
 import Footer from "./components/Footer";
-import "../src/style/index.scss";
+import "../src/styles/index.scss";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <Error />,
-  },
-  {
-    path: "/Lodging/:id",
-    element: <Lodging />,
-  },
-  {
-    path: "/about",
-    element: <About />,
   },
 ]);
 
