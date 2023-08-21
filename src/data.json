@@ -1,41 +1,52 @@
 [
         {
-            "title": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-            "cover": "../assets/Booki/booki.png",
-            "description": "Création d'un site web responsive en HTML et CSS, manipulation des grid.",
-            "pictures" : [
-                "../assets/Booki/desktop.png",
-                "../assets/Booki/tablette.png"
-            ]
+            "title": "Booki",
+            "cover": "../assets/Booki/desktop.png",
+            "description": "Développement d'une page d'accueil responsive en HTML et CSS - Formation OpenClassrooms.",
+            "difficulties": "Manipulation des grids selon les différentes tailles d'écran.",
+            "solution" : "Ressources utiles fournies dans les cours.",
+            "skills": [
+                "HTML",
+                "CSS"
+            ],
+            "link" : "https://booki-topaz.vercel.app/"
         },
         {
-            "title": "Créez une application web de location immobilière avec React",
-            "cover": "../assets/Kasa/kasa.png",
-            "description": "Création d'une application React avec mise en place de React Router.",
-            "pictures" : [
-                "../assets/Kasa/about.png",
-                "../assets/Kasa/card.png",
-                "../assets/Kasa/home.png"
-            ]
+            "title": "Kasa",
+            "cover": "../assets/Kasa/card.png",
+            "description": "Création d'une application React avec mise en place de React Router - Formation OpenClassrooms",
+            "difficulties" : "Réalisation d'animations en CSS, gestion de la navigation entre les différentes routes.",
+            "solution" : "Ressources utiles fournies dans les cours, mise en place de React Router DOM",
+            "skills" : [
+                "CSS",
+                "React"
+            ],
+            "link" : "https://kasa-amber.vercel.app/"
         },
         {
-            "title": "Créez une page web dynamique avec JavaScript",
-            "cover": "../assets/Architecte/architecte.png",
-            "description": "Création d'un site dynamique, gestion des appels à l'API avec fetch, connexion et authentification de l'utilisateur.",
-            "pictures" : [
-                "../assets/Architecte/admin_view.png",
-                "../assets/Architecte/login.png",
-                "../assets/Architecte/user_view.png"
-            ]
+            "title": "Sophie Bruel - Architecte",
+            "cover": "../assets/Architecte/user_view.png",
+            "description": "Création d'une page web dynamique avec Javascript",
+            "difficulties" : "Gestion des appels à l'API avec fetch, connexion et authentification de l'utilisateur.",
+            "solution" : "Utilisation des différentes méthodes POST, GET et DELETE et vérifications du succès des requêtes avec Postman.",
+            "skills" : [
+                "Javascript",
+                "Postman"
+            ],
+            "link" : ""
         },
         {
-            "title": "Développez le back-end d'un site de notation de livres",
-            "cover": "../assets/Mon_Vieux_Grimoire/logo.png",
-            "description": "Création d'un serveur Express et d'une API RESTful, mise en place d'un système d'authentification utilisateur, sauvegarde des données dans la base de donnée MongoDB.",
-            "pictures" : [
-                "../assets/Mon_Vieux_Grimoire/user_view.png",
-                "../assets/Mon_Vieux_Grimoire/add_book.png",
-                "../assets/Mon_Vieux_Grimoire/rate.png"
-            ]
+            "title": "Mon Vieux Grimoire",
+            "cover": "../assets/Mon_Vieux_Grimoire/user_view.png",
+            "description": "Développement du back-end du site web, création d'un serveur Express et d'une API RESTful.",
+            "difficulties" : "Mise en place d'un système d'authentification utilisateur et stockage des données dans une base de donnée. Téléchargement et optimisation des images entrantes en respect du Green Code",
+            "solution" : "Utilisation de Jsonwebtoken et bcrypt pour sécuriser l'authentification et mot de passe utilisateur, sauvegarde des données avec MongoDB Atlas. Les images sont récupérées et optimisées avec Multer et Sharp.",
+            "skills" : [
+                "Javascript",
+                "Node.js",
+                "Express",
+                "MongoDB"
+            ],
+            "link" : ""
         }
     ]

@@ -10,9 +10,9 @@ const Footer = () => {
     return (
         <div className='footer'>
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo" onClick={handleClick} className="logo-git"/>
-            <p className='contact' id='Contact'>
-                Duprez_camille@yahoo.com
-            </p>
+            <a href="mailto:duprez_camille@yahoo.com" className='contact' id='Contact'>
+                duprez_camille@yahoo.com
+            </a>
         </div>
     )
 }

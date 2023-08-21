@@ -1,3 +1,5 @@
+
+
 .footer {
     display: flex;
     justify-content: space-around;
@@ -12,6 +14,11 @@
         height: 50px;
         border-radius: 50%;
         cursor: pointer;
+    }
+    
+    .contact {
+        text-decoration: none;
+        color: inherit;
     }
 }
 
