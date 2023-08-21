@@ -18,6 +18,8 @@ const Works = () => {
             <p>Solution : {i.solution}</p>
             <p>Compétences acquises : {i.skills.join(', ')}</p>
             { i.link && <a href={i.link} target="_blank" rel="noopener noreferrer">Voir le projet</a> }
+            <br />
+            <a href={i.git} target="_blank" rel="noopener noreferrer">Lien GitHub</a>
           </div>
         </div>
       ))}
