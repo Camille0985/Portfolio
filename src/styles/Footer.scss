@@ -7,6 +7,10 @@ footer {
     height: 100px;
     background-color: $main-color;
     color: white;
+
+    .logo-git {
+        display: none;
+    }
     
     .contact {
         color: inherit;
@@ -15,7 +19,18 @@ footer {
 
 @media screen and (max-width: 425px) {
 
-    .contact {
-        font-size: 12px;
+    footer {
+
+        .logo-git {
+            display: block;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .contact {
+            font-size: 12px;
+        }
     }
 }
