@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";

@@ -4,7 +4,8 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Works from "../components/Works";
+import Gallery from "../components/Gallery";
+import Contact from "../components/Contact";
 
 const Home = () => {
   const [isOnBanner, setIsOnBanner] = useState(true);
@@ -12,14 +13,14 @@ const Home = () => {
 
   const handleScroll = () => {
     if (!bannerRef.current) return;
-
-    const bannerBottom = bannerRef.current.offsetTop + bannerRef.current.offsetHeight;
-    const scrollY = window.scrollY;
-
-    if (scrollY >= bannerBottom) {
-      setIsOnBanner(false);
-    } else {
+  
+    const banner = bannerRef.current.getBoundingClientRect();
+    const header = document.getElementById("Header").getBoundingClientRect();
+  
+    if (header.bottom <= banner.bottom) {
       setIsOnBanner(true);
+    } else {
+      setIsOnBanner(false);
     }
   };
 
@@ -36,9 +37,12 @@ const Home = () => {
         <Header isOnBanner={isOnBanner} />
         <Banner bannerRef={bannerRef} />
       </div>
-      <About />
-      <Skills />
-      <Works />
+      <main>
+        <About />
+        <Skills />
+        <Gallery />
+        <Contact />
+      </main>
     </div>
   );
 };

@@ -1,0 +1,21 @@
+@import 'Colors.scss';
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: $main-color;
+    color: white;
+    
+    .contact {
+        color: inherit;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .contact {
+        font-size: 12px;
+    }
+}

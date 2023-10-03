@@ -1,10 +1,9 @@
 import React from 'react';
-import '../styles/Skills.scss';
 
 function Skills() {
 
   return (
-    <div className='skills' id='Skills'>
+    <section className='skills' id='Skills'>
       <div className='Front skills-li'>
         <span>Front-End</span>
         <div className='ul-container'>
@@ -12,6 +11,7 @@ function Skills() {
             <li>HTML</li>
             <li>CSS</li>
             <li>React.js</li>
+            <li>Vue.js 3</li>
           </ul>
         </div>
       </div>
@@ -35,7 +35,7 @@ function Skills() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

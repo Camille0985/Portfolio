@@ -1,11 +1,10 @@
 import React from "react";
-import "../styles/About.scss";
 
 function About() {
 
 
     return(
-        <div id="About">
+        <article id="About">
             <div className="about_container">
                 <h2>À Propos</h2>
                 <p className="about_me">Passionnée d'informatique dès mon plus jeune âge, j'ai par la suite découvert l'univers du web.</p>
@@ -15,7 +14,7 @@ function About() {
                 </p>
                 <p className="about_me">Je souhaite maintenant poursuivre cette belle aventure de découverte et d'apprentissage dans le développement.</p>
             </div>
-        </div>
+        </article>
     )
 };
 

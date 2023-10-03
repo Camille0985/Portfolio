@@ -9,7 +9,8 @@
                 "HTML",
                 "CSS"
             ],
-            "link" : "https://booki-topaz.vercel.app/"
+            "link" : "https://booki-topaz.vercel.app/",
+            "git" : "https://github.com/Camille0985/Booki"
         },
         {
             "title": "Kasa",
@@ -21,7 +22,8 @@
                 "CSS",
                 "React"
             ],
-            "link" : "https://kasa-amber.vercel.app/"
+            "link" : "https://kasa-amber.vercel.app/",
+            "git" : "https://github.com/Camille0985/Kasa"
         },
         {
             "title": "Sophie Bruel - Architecte",
@@ -33,7 +35,8 @@
                 "Javascript",
                 "Postman"
             ],
-            "link" : ""
+            "link" : "",
+            "git" : "https://github.com/Camille0985/Sophie-Bruel-Architecte"
         },
         {
             "title": "Mon Vieux Grimoire",
@@ -47,6 +50,7 @@
                 "Express",
                 "MongoDB"
             ],
-            "link" : ""
+            "link" : "",
+            "git" : "https://github.com/Camille0985/Mon-Vieux-Grimoire"
         }
     ]

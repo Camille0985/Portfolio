@@ -3,9 +3,9 @@ import React from 'react';
 function Contact() {
 
   return (
-    <div className='skills'>
+    <section id='Contact'>
       
-    </div>
+    </section>
   );
 }
 

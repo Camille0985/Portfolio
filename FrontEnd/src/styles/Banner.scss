@@ -1,14 +1,17 @@
-.banner {
+@import 'Colors.scss';
+
+#banner {
     width: 100%;
     height: 220px;
     display: flex;
-    background-color: #16453b;
+    background-color: $main-color;
     margin: 0;
-    padding: 0;
+    padding-top: 80px;
     border: 1px 0 solid rgb(222, 215, 215);
     color: white;
     font-size: 30px;
     align-items: center;
+    justify-content: center;
 
     .banner-content {
         display: flex;
@@ -20,6 +23,7 @@
             margin: 0;
             padding: 20px;
             width: 70%;
+            text-align: center;
         }
     }
 

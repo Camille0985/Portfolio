@@ -1,0 +1,28 @@
+@import 'Header.scss';
+@import 'Banner.scss';
+@import 'About.scss';
+@import 'Skills.scss';
+@import 'Gallery.scss';
+@import 'Works.scss';
+@import 'Footer.scss';
+@import 'Colors.scss';
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $main-color;
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .Home {
+        .reverse {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
